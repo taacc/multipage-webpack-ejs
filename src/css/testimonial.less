@@ -1,0 +1,125 @@
+.swipe-contain{
+    padding:15PX 12PX 0 15PX;
+    border-bottom:10PX solid  #e0e0e0;
+}
+.top-tit{
+    font-weight:bold;
+    font-size:16PX;
+    color:#666666;
+}
+.swipe-self{
+    position: relative;
+    overflow-x: scroll;
+    margin-top:10PX;
+    height: 110PX;
+    padding:0
+}
+.swipe-wrap {
+    position: absolute;
+    display:flex;
+}
+.swipe-box{
+    width:145PX;
+    height:93PX;
+}
+::-webkit-scrollbar {
+        width: 0PX;
+    }
+.swipe-img{
+    width:145PX;
+    height:93PX;
+}
+.swipe-box:not(:first-child){
+    margin-left:5PX;
+}
+.line_01{
+    height:1PX;
+    border:none;
+    border-top:10PX solid  #e0e0e0;
+}
+.content {
+    // margin-top: 40PX;
+    margin-bottom: 50PX;
+    padding-bottom:50PX;
+    .banner {
+        img {
+            width: 100%;
+            display:block;
+        }
+    }
+}
+.case-item-video {
+    width:100%;
+    padding-bottom:55%;
+    height:0;
+    background:url('../assets/image/testimonial/success_case/cover01.png') no-repeat  center center;
+    background-size:contain;
+    .circle{
+        margin-left:45%;
+        padding-top:19%;
+        .start-btn{
+            width:41PX;
+            height:41PX;
+        }
+    }
+
+}
+.top-content{
+    margin-top:10PX;
+    margin-bottom:20PX;
+    font-size:14PX;
+    font-style: italic;
+    color:#666666;
+    word-break: break-word;
+}
+.story-content{
+    width:100%;
+    margin-top:10PX;
+    display:-webkit-box;
+    .story-item{
+        position: relative;
+        width:49%;
+        .story-des{
+            margin-top:15PX;
+            margin-bottom: 56PX;
+            font-size:14PX;
+            color:#666666;
+        }
+        .img-item{
+            width:100%;
+            padding-bottom:69%;
+        }
+        .one-img{
+            background:url('../assets/image/testimonial/success_case/cover08.jpg') no-repeat  center center;
+            background-size:contain;
+        }
+        .two-img{
+            background:url('../assets/image/testimonial/success_case/cover07.jpg') no-repeat  center center;
+            background-size:contain;
+        }
+        .main-name{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align:right;
+            margin-top:20PX;
+            padding-bottom:20PX;
+            font-size:16PX;
+            color:#333333;
+            font-weight:bold;
+        }
+    }
+    .story-item:nth-child(2){
+        margin-left:2%;
+
+    }
+
+}
+// @keyframes swipe {
+//     0% {
+//         left: 0;
+//     }
+//     100% {
+//         left: -1000PX;
+//     }
+// }

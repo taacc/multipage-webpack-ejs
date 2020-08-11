@@ -1,0 +1,56 @@
+@import '../../css/color.less';
+.mask-tips {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafa;
+    .tips-close-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      font-size: 60px;
+      line-height: 80px;
+      color: @color-text;
+      background: #000;
+      z-index: 99999;
+    }
+    .mask-tips-content{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      padding: 0 10PX;
+      word-break: break-word;
+      .icon{
+        width: 68PX;
+        height: 68PX;
+        margin: 0 auto;
+        background-size: 100%;
+        }
+      .title{
+        margin-top: 10PX;
+        font-size: 15PX;
+        color: #989898;
+        }
+      .prompt{
+        margin-top: 10PX;
+        color: #989898;
+        font-size: 15PX;
+        span{
+          color: #337ab7;
+          }
+        }
+      .bg-loading{
+        background-image: url('../../assets/image/maskTips/loading.gif')
+        }
+      .bg-noResult{
+        background-image: url('../../assets/image/maskTips/no-result.png')
+        }
+    }
+}

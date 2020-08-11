@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/h/static/assets/static/js/jquery-min.js"></script>
+</head>
+<body>
+  <div class="maskbox" id="contain">
+    <div class="lottery-contain">
+      <img class="square-top" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_top_banner.png')%>">
+      <div class="gift-all">
+        <img class="star-one" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_star_2.png')%>">
+        <img class="star-two" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_star.png')%>">
+        <img class="star-three" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_star.png')%>">
+        <div class="gift-contain">
+            <div class="gift-part" >
+              <img class="gift-img" src="">
+            </div>
+        </div>
+        <div class="draw-lottery">
+          <div class="start">START</div>
+          <div class="word-con">
+            <div class="start-word">
+              <span>Remaining</span>
+              <span>Chance(s):</span>
+            </div>
+            <div class="start-icon"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scrollWrap">
+        <marquee width=315 behavior=scroll direction=left align=middle>
+          <div class="mar-con">
+            {{item.createDateStr}}<span class="mar-text">M{{item.memberNo}}****{{item.lastNo}}</span>{{item.awardTitle}}
+          </div>
+        </marquee>
+      </div>
+      <div class="rule-con">
+        <img class="tit-img" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_gz_text.png')%>">
+        <div class="rule-des"><span>1.</span><span>One free lottery chance everyday.</span></div>
+        <div class="rule-des"><span>2.</span><span>More lottery chances of your each credit order.</span></div>
+        <div class="rule-des"><span>3.</span><span>Free chance won't be accumulated until the next day.</span></div>
+        <div class="rule-des"><span>4.</span><span>Rewards will be sent to your account directly.</span></div>
+        <div class="rule-btn" @click="goPurchase">Join Now</div>
+      </div>
+    </div>
+    <div class="obt-mask" style="display: none;">
+      <div class="tip-con">
+        <img class="close-btn" src="<%= require('../assets/image/mid-autumn/icon_zq_tc_zjjg_close.png')%>" closeTip="0">
+        <img class="top-show" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_zjjg_congrats.png')%>">
+        <div class="tip-des">
+          
+        </div>
+      </div>
+    </div>
+    <div class="obt-mask" style="display: none;">
+      <div class="tip-con">
+        <img class="close-btn" src="<%= require('../assets/image/mid-autumn/icon_zq_tc_zjjg_close.png')%>" closeTip="1">
+        <img class="qiqiu-img" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_zjjg_no_gift.png')%>">
+        <div class="tip-des">
+          <span>Thank you for the participation! </span>
+          <span>Try again for the bumper gifts!</span>
+        </div>
+      </div>
+    </div>
+    <div class="obt-mask" style="display: none;">
+      <div class="tip-con">
+        <img class="close-btn" src="<%= require('../assets/image/mid-autumn/icon_zq_tc_zjjg_close.png')%>" closeTip="2">
+        <img class="qiqiu-img" src="<%= require('../assets/image/mid-autumn/photo_zq_tc_zjjg_no_gift.png')%>">
+        <div class="tip-des">
+          <span>No remaining chance. </span>
+          <span>Get more lottery chances by credit order now!</span>
+        </div>
+        <div class="join-btn">Join Now</div>
+      </div>
+    </div>
+    <new-confirm ref="conWelfare" :text="conWelfareText"></new-confirm>
+  </div>
+</body>
+</html>

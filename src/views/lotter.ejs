@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/h/static/assets/static/js/jquery-min.js"></script>
+    <!-- <script src="/h/static/assets/static/js/vconsole.min.js"></script> -->
+</head>
+<body>
+     <div class="contain">
+        <div id="canvas" style="text-align:center;margin-top: 140px;">
+            <div style="text-align:center;position:relative;display:inline-block;">
+                <canvas class="all-can" id="wheelcanvas"></canvas>
+                <img src="<%= require('../assets/image/icon_go.png')%>" class="small-circle" id="minwheel">
+            </div>
+        </div>
+        <div class="promote" style="display: none;">You have enjoyed it today.Come back to us tomorrow!</div>
+        <div class="rule-bow">
+            <div class="tit">Rules:</div>
+            <div class="content">1. Don't miss the opportunity to lucky draw every day.</div>
+            <div class="content">2. The number of lucky draw won't be accumulated until the next day.</div>
+            <div class="content">3. The rewards will be sent to your account directly. </div>
+            <div class="record">View Winning Records</div>
+        </div>
+        <div class="re-list" id="re-list" style="display: none;">
+            <img src="<%= require('../assets/image/promoto_close.png')%>" class="close-icon">
+            <div id="re-column">
+
+            </div>
+        </div>
+        <div class="con-tip" awardType="real" style="display: none;">
+            <div class="tip">
+                <div class="tip-word">Congratulation on your winning <span class="fon-name"></span>.</div>
+                <div class="tip-word">Please send your lady's ID to Customer Support for the delivery.</div>
+            </div>
+            <img src="<%= require('../assets/image/icon_tips_close.png')%>" class="tip-close">
+        </div>
+        <div class="con-tip" awardType="virtual" style="display: none;">
+            <div class="tip">
+                <div class="tip-word">Congratulation on your winning <span class="fon-name"></span>.</div>
+                <div class="tip-word">The reward has been sent to your account and please continue to participate in lucky draw tomorrow!</div>
+            </div>
+            <img src="<%= require('../assets/image/icon_tips_close.png')%>" class="tip-close">
+        </div>
+        <div class="con-tip" awardType="thank you" style="display: none;">
+            <div class="tip">
+                <div class="tip-word">Thank you!</div>
+                <div class="tip-word">Please continue to participate in lucky draw tomorrow!</div>
+            </div>
+            <img src="<%= require('../assets/image/icon_tips_close.png')%>" class="tip-close">
+        </div>
+    </div>
+</body>
+</html>

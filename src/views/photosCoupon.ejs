@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/h/static/assets/static/js/jquery-min.js"></script>
+    <script src="/h/static/assets/static/js/jquery.i18n.properties.js"></script>
+</head>
+    <style>
+    .pic-box {
+        width: 100%;
+        height: 112px;
+    
+    }
+    .content {
+        width: 100%;
+        margin-top: 25px;
+        font-size: 12px;
+        position:relative;
+        z-index:22;
+
+    }
+    .background-pic {
+        width: 100%;
+        position: relative;
+        background-color: #fbf4ec;
+    }
+    .word-img{
+    width:calc(100% - 40px);
+    padding:0 20px;
+    }
+    .free-content{
+    margin:27px 11px 0 11px;
+    background-color: #f8e9d7;
+        border-radius: 7px;
+        border: dashed  3px #f5cc9c;
+    padding:23px 18px;
+    font-size: 14px;
+        color: #40280b;
+    }
+    .free-special{
+    margin-bottom:24px;
+
+    }
+    .free-specia span {
+        font-size: 15px;
+        color: #ff7214;
+        margin:0 5px;
+    }
+    .free-img{
+    width: 58px;
+        height: 12px;
+    margin:0 5px;
+    }
+    .last-content{
+    margin-top:12px;
+    padding-bottom:20px;
+    }
+    .last-part{
+    font-size: 12px;
+        color: #666666;
+    margin:47px 25px 0 25px;
+    }
+    .white-space{
+        width: 100%;
+        height: 77px;
+        background-image: linear-gradient(0deg, #fac05a 0%, #fbf4ec 100%), 
+        linear-gradient(#fbf4ec, #7d7d7d);
+        background-blend-mode: normal, normal;
+        opacity: 0.5;
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom:-20px;
+    z-index:11
+    }
+        </style>
+<body>
+    <div class="background-pic">
+      <div class="pic-box" style="background: url('<%=require('../config/global.js')('imgHost')%>event/57/icon_photo_coupon_msite_details_top.png');background-size: 100% 112px;">
+      </div>
+      <div class="content">
+        <img class="word-img" src="<%=require('../assets/image/innerPage/photosCoupon/icon_photo_coupon_msite_details_text.png')%>">
+        <div class="free-content ">
+          <div class="free-special">
+            Check out our summer gifts, for our active prime members, just simply log in Whispark daily and you can get
+            <img src="<%=require('../assets/image/innerPage/photosCoupon/icon_photo_coupon_msite_details_text_2.png')%>" class="free-img"> photo vouchers to view any lady's photo for 
+            <img src="<%=require('../assets/image/innerPage/photosCoupon/icon_Photo_coupon_details_text_3.png')%>" class="free-img">. Take action and discover more beauty of your love!
+          </div>
+          <div>
+            Bring your date the smell of Summer! Those free vouchers will not accumulate to the next day, don't forget to log in daily and enjoy!
+          </div>
+        </div>
+        <div class="last-part">
+          <div >* If the activeness of your account is not high enough, the photo vouchers may be not available for you. </div>
+          <div class="last-content">* Whispark reserves the right of final interpretation upon the activity.</div>
+        </div>
+      </div>
+      <div class="white-space"></div>
+    </div>
+</body>
+</html>

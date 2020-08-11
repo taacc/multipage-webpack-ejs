@@ -1,0 +1,13 @@
+// safety-tips页面需要引用的数据
+export default Object.freeze({
+  title: `Dating Safety Tips`,
+  list: [{
+      itemTitle: `During Communication `,
+      itemContent: `1. Guard your account access information. Please be careful about sharing your information like log in email address and password. When accessing your account from public or friend’s computer, use extra caution. Whispark will never send you an email asking for your email address and password information. <br/><br/>2. Be aware of language and culture differences. If misunderstanding arises, face it and communicate positively. <br/><br/>3. Don't lie. It is not advised to share photos or other information that is untruthful. Misrepresenting yourself during the communication might piss off your date. <br/><br/>4. Try upload more photos to profile, to enhance your credibility. <br/><br/>5. Protect your finances. Be alerted when the other users ask you for money. Under any circumstance, Whispark will not recommend users to send money, or release financial information (for example, your social security number, credit card number or bank information) to any other user. <br/><br/>6. Use our online services to know the person from various aspects. Always be cautious and use common sense. <br/><br/>7. Report suspicious users for protecting yourself. Your can help us to improve the security of the website. Please report anyone who violate out Terms of Use. `
+    },
+    {
+      itemTitle: `Private contact or meeting in person `,
+      itemContent: `1. Please don’t provide your private contact information to the people without well knowledge with each other. Offline contact may be risky. Make sure the familiarity between you and the other side is Friend-ready before providing personal contact information.<br/><br/> It is important to find someone who has the same willingness to be in a relationship and similar goals with yours. Whispark always suggest users to use as much as possible our Voice Message, Chat, Letter service to ensure a mutual understanding with each other. Happy relationships are based on the mutual understanding. <br/><br/>2. When you are ready to meet, be well prepared. If it is a long distance meeting, try to know more about travel tips to ensure a safe journey. <br/><br/>3. Let roommates, friends or family member know when you plan to get out on a date. Inform them of your plan and when and where you are going. Remember to take a mobile phone with you. <br/><br/>4. Meet in a safe public place. Never at your date’s home or apartment. And if possible, provide your own transport. <br/><br/>5. Keep personal items with you at all times.`
+    }
+  ]
+})

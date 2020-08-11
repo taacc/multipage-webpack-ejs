@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/h/static/assets/static/js/jquery-min.js"></script>
+</head>
+<body>
+    	<div class="success-case">
+		<div class="content">
+			<div class="banner" @click="clickToMore()">
+				<img src='<%=require('../assets/image/testimonial/success_case/banner .png')%>' alt="">
+			</div>
+			<div style="margin:15px 12px;color:#666666" @click="clickToMore()">
+				We believe everyone in the world deserves good love. These married couples are living proof that {{$SiteName}} really helps members around the world meet someone wonderful. Let’s share their joy.
+				<br><br>If you have found the love of life through {{$SiteName}}, we’d love to hear your story. </div>
+			<div class="line_01"></div>
+			<!-- 滑动条 -->
+			<div class="swipe-contain">
+				<div class="top-tit">Sweetie Moment</div>
+				<div id="swipeBox" class="swipe-self" >
+                    <div class="swipe-wrap" id="swipeWrap">
+                        <div class="swipe-box">
+                            <!-- <img  :src="item" class="swipe-img" > -->
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="swipe-contain" @click="clickToMore()">
+				<div class="top-tit">Meet My Fate</div>
+				<div class="case-item-video" id="video">
+					<div class="circle">
+					    <img class="start-btn" src="<%=require('../assets/image/testimonial/success_case/icon_Video.png')%>">
+					</div>
+					<!-- <img :src="imagePath + item.videoImg"> -->
+				</div>
+				<div class="top-tit" style="color:#333333;margin-top:15px;">We met on {{$SiteName}}</div>
+				<div class="top-content">
+          It’s excited that I got the strong feeling for her so I decided to meet Linda in China. And you know what, I knew immediately she would be my wife at the first sight.
+
+          I’m really happy to marry Linda and can’t wait to take her back to Hawaii with me. Thank you Whispark for bringing this such extraordinary experience to us!
+				</div>
+			</div>
+			<div class="swipe-contain" @click="clickToMore()">
+				<div class="top-tit">Our Stories</div>
+				<div class="story-content">
+					<div class="story-item" Anchor="Sam">
+						<div class="img-item one-img"></div>
+						<!-- <img " src="./cover06.jpg">  -->
+						<div class="story-des">We've experienced a lot in our own life before we met. But we don't want to be plain. Valentine's Day is the perfect day to be our anniversary. Don't be disappointed about love, you will find the true one like us eventually. </div>
+						<div class="main-name">Sam</div>
+					</div>
+					<div class="story-item" Anchor="Michael">
+						<div class="img-item two-img"></div>
+						<!-- <img class="img-item" src="./cover07.png">    -->
+						<div class="story-des">I haven't known much about Ukraine before I met Yaroslava. I’ve studied their customs and culture to having common topics with her at the beginning. I’m glad I did that, as which helps a lot to warm us up.</div>
+					    <div class="main-name">Michael</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <VideoBox :videoSrc="videoPlaySrc" :showVideo.sync='isShowVideo'></VideoBox>
+             -->
+            <!-- video -->
+            <!-- <div id="videoCon">
+                
+            </div> -->
+		</div>
+		<confirm ref="confirm" :text="confirmText" :needCancel=true @confirm="_toUpdate"></confirm>
+	</div>
+</body>
+</html>
